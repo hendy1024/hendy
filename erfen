@@ -8,7 +8,6 @@ int SearchNum(int a[], int a_size, int find_num)
 	while(min <= max)
 	{
 		int mid = min + (max - min)/2;
-		cout << "SearchNum ..." << mid << min << max << endl;
 		if(find_num > a[mid])
 		{
 			min = mid + 1;
