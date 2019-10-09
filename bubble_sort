@@ -3,6 +3,7 @@ using namespace std;
 
 void sort_func(double a[], int a_size)
 {
+	int count = 0;
 	for(int i = 0; i < a_size; ++i)
 	{
 		for(int j = i + 1; j < a_size; ++j)
@@ -12,9 +13,11 @@ void sort_func(double a[], int a_size)
 				double temp = a[i];
 				a[i] = a[j];
 				a[j] = temp;
+				++count;
 			}
 		}
 	}
+	cout << "total count is " << count << endl;
 }
 
 int main()
